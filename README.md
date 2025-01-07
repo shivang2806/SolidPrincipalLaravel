@@ -19,9 +19,15 @@ SOLID principles are a set of programming best practices that can help developer
 
 ## Important Files
 
-- UserController
-- RepositoryServiceProvider
-- UserService
-- UserRepository
-- UserInterface
+- App\Http\Controllers\UserController
+- App\Providers\RepositoryServiceProvider
+- App\Services\UserService
+- App\Repositories\UserRepository
+- App\Interfaces\UserInterface
 
+## Description
+
+- We use Interface to define blue print, remove duplication, improve maintainability, scalability, flexibility, loosely coupled
+- We use controller only for responce
+- We use reposatory for databse data handling
+- We use service for logic handling
